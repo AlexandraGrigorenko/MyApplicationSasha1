@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello Kitty!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF80AB"
+        android:textSize="42sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|clip_vertical"
+        android:layout_weight="15"
+        android:backgroundTint="#FFA7C4"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="sans-serif"
+        android:rotationX="27"
+        android:text="Hello!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF0056"
+        android:textSize="24sp"
+        android:textStyle="normal|italic"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#F06292"
+        android:textColorHint="#F06292"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFC3D7"
+        android:clickable="true"
+        android:cropToPadding="true"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@android:style/Widget.Material.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:buttonTint="#000000"
+        android:lineSpacingExtra="24sp"
+        android:text="You love Hello Kitty"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Switch
+        android:id="@+id/switchBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:text="True"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:thumbTint="#F384A9" />
+
+    <ToggleButton
+        android:id="@+id/toggleBott"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FFD4E2"
+        android:buttonTint="#FA0054"
+        android:textAlignment="gravity"
+        android:textColor="#FF0459"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kitty1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kitty2" />
+    </RadioGroup>
+
+</LinearLayout>
